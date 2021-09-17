@@ -7,6 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-color: #065896;
@@ -49,11 +51,21 @@
   <center>
     <img style="width:55%; height:55%" src="assets\2021_Hackathon_Title_Header and Logo.svg" alt="Show Us Your Awesome!">
   </center>
-<br>
+  <br>
 <br>
 <div class="text-center">
-  <a href="be-awesome-leaderboard.html" target="_blank" class="btn btn-primary" style="width: 60%; background-color:azure; color:#006699; font-size:20px; font-family: 'Courier New', monospace;"><b>Click to Check the Event Leaderboard!</b></a>
+  <!-- <a href="be-awesome-leaderboard.html" target="_blank" class="btn btn-primary" style="width: 60%; background-color:azure; color:#006699; font-size:20px; font-family: 'Courier New', monospace;"><b>Click to Check the Event Leaderboard!</b></a> -->
+  <a href="" onclick="alertFunction()" class="btn btn-primary" style="width: 60%; background-color:azure; color:#006699; font-size:20px; font-family: 'Courier New', monospace;"><b>Click to Check the Event Leaderboard!</b></a>
 </div>
+<script>
+  function alertFunction() {
+    alert("This Leaderboard will be available 10/1/2021-- Please check back soon!")
+  }
+</script>
+<br>
+<div class="text-center">
+  <a href="https://planning.org/divisions/tech/" class="btn btn-primary" style="width: 60%; background-color: rgb(190, 198, 201); color:#006699; font-size:20px; font-family: 'Courier New', monospace;"><b>Click to Learn More About the Planning Technology Division</b></a>
+</div>  
 <br>
 <br>
 <hr style="background-color:azure">
@@ -79,11 +91,13 @@ planning-technology-resources GitHub page maintained by the APA Technology Divis
   </div>
   <div style="margin-left: 100px; margin-right: 100px; text-align: justify">
     <p><b>Event Guidelines:</b></p>
-    <p> --->    To be eligible for prizes, the following eligibility requirements must be met:</p>
+    <p> --->    To be eligible for Top 10 prizes, the following eligibility requirements must be met:</p>
     <ul>
       <li style="color:azure">Registration via <b>Section 1</b> of the Google Form <a href="https://forms.gle/uZZVq4Jc4R9A9JED7"><b><u>LINKED HERE</u></b></a></li>
       <li  style="color:azure">Attainment of Top 10 ranking on event leaderboard</li>
     </ul>
+    <br>
+    <p>--->    To be eligible for Top 3 prizes, proof of APA Technology Division membership must be provided.</p>
     <br>
     <p>--->   To be eligible for prizes or awards through the Digital Ocean/GitHub sponsored event you must submit using GitHub.</p>
     <br>
@@ -185,6 +199,36 @@ planning-technology-resources GitHub page maintained by the APA Technology Divis
   </table>
   </div>
 <br>
+<div class="row justify-content-center" style="margin-left: 75px; margin-right: 75px">
+  <div class="col">
+    <div class="card h-100" style="background-color:#fbb323">
+      <div style="margin-top: 30px; margin-bottom: 30px; margin-left: 15px; margin-right: 15px">
+              <center><h5 style="color:white"><b>Top 10 Award</b></h5>
+                <br>
+                <br>
+              <p style="color:azure"> The Top 10 contributors will receive a T-shirt.</p></center>
+              </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100" style="background-color: #eb7a34">
+      <div style="margin-top: 30px; margin-bottom: 30px; margin-left: 15px; margin-right: 15px">
+            <center><h5 style="color:white"><b>Top 3 Award</b></h5>
+              <br>
+              <p style="color:azure"> The Top 3 contributors will receive a Planning Technology Division Membership, A book related to technology in planning, and a tote bag. </p></center>
+              </div>
+    </div>
+  </div>
+    <div class="col">
+      <div class="card h-100" style="background-color:#fb4723">
+        <div style="margin-top: 30px; margin-bottom: 30px; margin-left: 15px; margin-right: 15px">
+                <center><h5 style="color:white"><b>Top Overall Award</b></h5>
+                  <br>
+                <p style="color:azure"> The top contributor overall will receive a Laser Cut City Map, a Planning Technology Division Membership, A book related to technology in planning, and a tote bag.</p></center>
+                </div>
+      </div>
+    </div>
+  </div>
 <br>
 <hr style="background-color:azure">
 <div class="text-center" >
