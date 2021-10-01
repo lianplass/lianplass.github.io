@@ -7,10 +7,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-color: #065896;
-            margin: 50px
+            margin: 5%
             }
         h1{
             font-family: 'Courier New', monospace;
@@ -28,8 +30,10 @@
         p{
             font-family: 'Courier New', monospace;
             color:white;
+            align-self: center;
+            align-content: center;
             }
-        .row {
+        .row{
                 margin: 0 auto; /* Added */
                 float: none; /* Added */
                 margin-bottom: 10px; /* Added */
@@ -38,70 +42,77 @@
             color: #006699;
             font-family: 'Courier New', monospace;
         }
+        a{
+          color:#fbb323;
+          background-color: rgb(30, 39, 66);
+          font-size: large
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 1px 5px;
+            border-radius: 50%;
+          }
+        .fa:hover {
+            opacity: 0.9;
+        }
+        .fa-twitter {
+          color: white;
+        }
+        .fa-reddit {
+          color: white;
+        }
     </style>
-
-
-    </script>
 </head>
 <body>
-<img style="width:45%; height:45%" src="/assets/2021_Hackathon_Title_Header and Logo.svg" alt="Show Us Your Awesome!">
+  <center>
+    <img style="width:65%; height:65%" src="/assets/Logo.svg" alt="Show Us Your Awesome!">
+  </center>
+  <br>
 <br>
+<!-- <div class="text-center">
+  <a href="" class="btn btn-primary" style="width: 60%; background-color: rgb(30, 39, 66); color:#fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Click to Join Office Hours<br> (October 7, 2021, 6:00 PM EST)</b></a>
+</div>  
+<br> -->
+<div class="text-center">
+  <a href="https://planning.org/divisions/tech/" class="btn btn-primary" style="width: 60%; background-color: rgb(30, 39, 66); color:#fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Click to Learn More About the Planning Technology Division</b></a>
+</div>  
 <br>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a style="font-size: x-large; font-family: 'Courier New', monospace; color:#006699" class="nav-link" href="#"><b>Homepage |         </b><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a style="font-size: x-large; font-family: 'Courier New', monospace; color:#006699" class="nav-link" href="/about.html">About This Event |         <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a style="font-size: x-large; font-family: 'Courier New', monospace; color:#006699" class="nav-link" href="/maintainers.html">Meet Your Board |         <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<br>
-<br>
+<hr style="height:2px;border-width:0;color:gray;background-color:white">
 <br>
 <h3><center>
-Thank you for your interest in participating in Hacktoberfest 2021 through contributions to the APA Technology Division Planning Technology Resources Repository!
+Thank you for you for participating in Hacktoberfest 2021 through your contributions to the APA Technology Division Planning Technology Resources Repository!
 </center></h3>
-<br>
-<br>
-<div class="text-center">
-<a href="https://forms.gle/qU4kaJF69xSsmYv26" target="_blank" class="btn btn-primary" style="width: 60%; background-color:#fbb323; color:#065896; font-size:20px; font-family: 'Courier New', monospace;"><b>Click here to submit using the online form</b></a>
-<br>
-<br>
-<a href="https://github.com/APA-Technology-Division/urban-and-regional-planning-resources/blob/main/CONTRIBUTING.md" target="_blank" class="btn btn-primary" style="width: 60%; background-color:#99ccff; color:#065896; font-size:20px; font-family: 'Courier New', monospace;"><b>Click here to submit using GitHub</b></a>
-</div>
-<br>
 <br>
 <hr style="height:2px;border-width:0;color:gray;background-color:white">
 <h1><b>Leaderboard</b></h1>
-<h3> Curious about where you stand in the rankings?  Top 10 contributors for each type of resource are shown below.
-Depending on your submission type, it can take up to <b>two</b> days for your updated ranking to appear on the site.</h3>
-<br>
+<p> Curious about where you stand in the rankings?  Top 10 contributors for each type of resource are shown below.
+Depending on your submission type, it can take up to <b><u>three</u></b> days for your updated ranking to appear on the site.</p>
 <br>
     <div class="card h-100 row">
       <center><div class="card-body">
-        <h5 class="card-title"><b>TOP 10</b></h5>
-        <iframe height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpBM3KfkSLv0UXrmfV7lIQHcxeG96wRYsAbaWZjXRqltQmzATGaCdLbDquCp5wo-bFt8ZMR0E8TUb1/pubhtml?gid=270204886&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        <iframe width= "100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpBM3KfkSLv0UXrmfV7lIQHcxeG96wRYsAbaWZjXRqltQmzATGaCdLbDquCp5wo-bFt8ZMR0E8TUb1/pubhtml?gid=270204886&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
       </div>
       </center>
       </div>
     </div>
 
-<div class="text-center">
-<center>
-<br>
-<br>
-<p> Site created by Lian Plass for the APA Planning Technology Division (2021)</p>
-</div>
-</center>
+    <footer>
+      <br>
+      <hr style="background-color:azure">
+      <div class="text-center" >
+       <p><b>
+          Link up with the APA Planning Technology Division
+        </b></p>
+        <P>
+        <a href="https://twitter.com/apa_technology?lang=en" class="fa fa-twitter" style="background-color: #065896;"></a>          
+        <a href="https://www.reddit.com/user/apa-tech-division/" class="fa fa-reddit" style="background-color: #065896;"></a>
+      </P>
+      <p>Site created by Lian Plass (2021)</p>
+      </div>
+    </footer>
 </body>
 </html>
