@@ -1,0 +1,18 @@
+.project-card {
+    width: 300px;
+    height: 525px;
+    margin-bottom: 20px;
+}
+
+.project-thumbnail {
+    width: 300px;
+    height: auto;
+}
+
+.project-table {
+    height: 300px;
+}
+
+.project-table td {
+    vertical-align: middle;
+}
