@@ -30,6 +30,14 @@ function createProjectCard(project) {
     return html;
 }
 
+function loadFilterOptions() {
+    const types = [...new Set(projectData.map(project => project.type))];
+    types.forEach(type => {
+        $('#type-filter').append(`<option value="${type}">${type}</option>`);
+    });
+}
+    
+
 // Function to load data from Google Sheets
 function loadProjectData() {
     fetch(`https://sheets.googleapis.com/v4/spreadsheets/1kp5n5rXxZLvK_th2qiNOpUbpJQ-ipC8jRHhz2Fu7WFM/values/Sheet1?key=AIzaSyC-PKKIgdRLA5bL_72Gs16m9ADwFdPrfus`)
@@ -41,33 +49,26 @@ function loadProjectData() {
                 "year": item[1],
                 "thumbnail_url": item[2],
                 "description": item[3],
-                "link": item[4]
+                "link": item[4],
+                "type": item[5]
             });
         });
+        loadFilterOptions();
         const projectCards = projectData.map(createProjectCard).join('\n');
         $('#project-cards').html(projectCards);
     });
 }
+
 
 // Load project data and add project cards to the page
 $(document).ready(function() {
     loadProjectData();
 });
 
-fetch(`https://sheets.googleapis.com/v4/spreadsheets/1kp5n5rXxZLvK_th2qiNOpUbpJQ-ipC8jRHhz2Fu7WFM/values/Sheet1?key=AIzaSyC-PKKIgdRLA5bL_72Gs16m9ADwFdPrfus`)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);  // Add this line
-        data.values.slice(1).forEach(item => {
-            projectData.push({
-                "project_name": item[0],
-                "year": item[1],
-                "thumbnail_url": item[2],
-                "description": item[3],
-                "link": item[4]
-            });
-        });
-        const projectCards = projectData.map(createProjectCard).join('\n');
-        $('#project-cards').html(projectCards);
-    })
-    .catch(error => console.log('Error:', error));  // Catch and log any errors
+// Filter change event
+$('#type-filter').on('change', function() {
+    const selectedType = $(this).val();
+    const filteredData = selectedType ? projectData.filter(project => project.type === selectedType) : projectData;
+    const projectCards = filteredData.map(createProjectCard).join('\n');
+    $('#project-cards').html(projectCards);
+});

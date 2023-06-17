@@ -23,21 +23,19 @@
         padding-top: 15px;
         padding-bottom: 15px;
      } */
-     h1{
-        color: #007BFF;
-     }
     </style>
     <title>Li Plass</title>
   </head>
   <body>
-    <div class="container" style="margin-top: 250px;margin-bottom:250px;background: rgba(255,255,255,0.6);">
+    <div class="container" style="margin-top: 100px;margin-bottom:300px;background: rgba(255,255,255,0.6);">
       <div class="row">
         <div class="col-4 align-self-center">
           <br>
           <center><img style= "width: 80%;" src="https://lianplass.github.io/assets/profile_photo.jpg" alt="Lian headshot" class="rounded-circle"></center>
           <br>
           <br>
-          <h1 style="color:#62bfe8"> <center> Lian Plass, AICP </center></h1>
+          <h1 style="color:#62bfe8"> <center> Lian Plass</center></h1>
+          <center>AICP, LEED GA</center>
           <br>
           <i><center>An urban planner who dreams of smarter cities</center></i>
           <br>
@@ -54,16 +52,22 @@
           <br>
           <table style="width:100%; background-color:#62bfe8; color:white">
             <tr>
-              <td><center><h1 style="font-size:large;">Browse Past Projects</h1></center></td>
-              <br>
+              <td><center><h1 style="font-size:large;">BROWSE PROJECTS</h1></center></td>
           </table>
+          <br>
+          <div style="text-align:right" class="filter-container">
+            <label for="type-filter">Filter by Type: </label>
+            <select id="type-filter">
+                <option value="">All</option>
+                <!-- Other options will be added dynamically -->
+            </select>
+          </div>
           <br>
           <div class="container" style="max-height:700px; overflow: auto;">
             <div id="project-cards" class="row">
             <!-- Cards will be added here by JavaScript -->
             </div>
           </div>
-          <i>Search functionality coming soon...</i>
         <br><br>
         </div>
       </div>
